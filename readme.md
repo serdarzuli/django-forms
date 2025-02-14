@@ -1,0 +1,1 @@
+We'll create a webpage and their contact forms (email, username, phone number, etc), we will create an admin panel according database.
