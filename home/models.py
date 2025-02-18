@@ -1,13 +1,14 @@
 from django.db import models
+from django.utils import timezone
 
 # Build the contact form using the inheritance and ORM
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()
+    date = models.DateTimeField(default=timezone.now)
     
-    
-# coktan secmeli bir kismimiz var departmant diye, ona buraya bir karsilik ENUMORATIN yazicaz. ayrica bunu ingilziceye cevir
+# I'll create an ENUM regarding to multi-section part on index.html
 
     DEPARTMENTS = [
         ('MF', 'Manufacturing'),
